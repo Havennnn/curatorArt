@@ -1,20 +1,19 @@
 import { useState } from 'react';
 import heroImg from '../assets/hero.svg';
+import resume from '../assets/resume.pdf';
 import './design.css';
 
-// Modal Component for "Contact Me"
 const ContactModal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null; // Don't render the modal if it's not open
+  if (!isOpen) return null;
 
-  // State for form inputs
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState(''); // Error state for validation
+  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault();
 
     // Validation check
     if (!name || !email || !message) {
@@ -22,13 +21,10 @@ const ContactModal = ({ isOpen, onClose }) => {
       return;
     }
 
-    // If validation passes, process the form data (e.g., log it or send to an API)
     console.log('Form submitted with:', { name, email, message });
 
-    // Set form submission to true and show a thank you message
     setIsSubmitted(true);
-    
-    // Close the modal after a short delay (optional)
+
     setTimeout(() => {
       onClose();
     }, 2000);
@@ -36,10 +32,8 @@ const ContactModal = ({ isOpen, onClose }) => {
 
   return (
     <>
-      {/* Background Overlay */}
       <div className="fixed inset-0 bg-black opacity-50 z-20" onClick={onClose}></div>
 
-      {/* Modal Content */}
       <div className="fixed inset-0 flex justify-center items-center z-30">
         <div className="bg-white p-6 rounded-lg w-full max-w-md sm:max-w-lg md:max-w-3xl">
           {!isSubmitted ? (
@@ -115,7 +109,6 @@ const ContactModal = ({ isOpen, onClose }) => {
   );
 };
 
-// Hero Component
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -149,9 +142,14 @@ const Hero = () => {
               Contact Me
             </div>
 
-            <div className='p-4 text-white font-bold bg-[#0C1830] hover:cursor-pointer hover:text-[#2A4D93] hover:bg-white duration-300 w-1/3 text-center boxshadow borders hover:scale-105 transform'>
+            <div
+              onClick={() => window.open(resume, '_blank')}
+              className='p-4 text-white font-bold bg-[#0C1830] hover:cursor-pointer hover:text-[#2A4D93] hover:bg-white duration-300 w-1/3 text-center boxshadow borders hover:scale-105 transform'
+            >
               Resume
             </div>
+
+
           </div>
         </article>
         <article className='hidden md:block'>
@@ -159,7 +157,6 @@ const Hero = () => {
         </article>
       </div>
 
-      {/* Modal */}
       <ContactModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
