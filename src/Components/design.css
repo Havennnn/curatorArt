@@ -1,0 +1,19 @@
+.shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shadowlight {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.removeshadow {
+    text-shadow: none;
+}
+
+.boxshadow {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.borders {
+    border-radius: 50px;
+}
