@@ -127,11 +127,11 @@ const Hero = () => {
           <p className='pt-40 sm:pt-10 text-2x1 font-bold text-[#0C1830] capitalize tracking-wide'>
             WELCOME TO THE ART WORLD!
           </p>
-          <p className='text-7xl font-bold text-white tracking-wider pointer-events-none shadow-none shadow'>We are Curator<span className='text-[#0C1830]'>Art</span></p>
+          <p className='text-7xl font-bold text-white tracking-wider pointer-events-none shadow'>We are Curator<span className='text-[#0C1830]'>Art</span></p>
           <p className='text-3xl font-bold text-[#0C1830] capitalize tracking-wide'>
             Art Curator & Enthusiast
           </p>
-          <p className='text-[1em] text-lg text-white capitalize tracking-wide pointer-events-none shadow-none shadow'>
+          <p className='text-[1em] text-lg text-white capitalize tracking-wide pointer-events-none shadow'>
           As an art curator with a deep passion for creativity, I seek to preserve and showcase the beauty of art. I specialize in organizing exhibitions, promoting artists, and fostering a deeper understanding of art in all its forms, from traditional to contemporary.
           </p>
           <div className='flex gap-x-8 w-full pt-5 md:pb-10 items-center'>
