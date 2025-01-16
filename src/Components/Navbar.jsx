@@ -35,11 +35,11 @@ const Navbar = () => {
     >
       <div className="align-element flex flex-col sm:flex-row sm:items-center py-5 justify-between">
         <h2 className="text-3xl font-medium text-white pointer-events-none">
-          Curator<span className="text-[#0C1830] font-bold text-[1.4em] shadowlight removeshadow">Art</span>
+          curator<span className="text-[#0C1830] font-bold text-[1.4em] shadowlight removeshadow">Art</span>
         </h2>
 
         {/* Buttons on the right */}
-        <div className="flex font-medium gap-x-14 buttons hidden sm:flex">
+        <div className="font-medium gap-x-14 buttons hidden sm:flex">
           {links.map((link) => {
             const { id, href, text } = link;
             return (
