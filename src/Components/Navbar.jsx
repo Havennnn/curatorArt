@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="align-element flex flex-col sm:flex-row sm:items-center py-5 justify-between">
         <h2 className="text-3xl font-medium text-white pointer-events-none">
-          Marbls<span className="text-[#0C1830] font-bold text-[1.4em] shadowlight removeshadow">Lats</span>
+          Curator<span className="text-[#0C1830] font-bold text-[1.4em] shadowlight removeshadow">Art</span>
         </h2>
 
         {/* Buttons on the right */}

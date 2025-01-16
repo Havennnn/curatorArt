@@ -125,28 +125,28 @@ const Hero = () => {
       <div className='align-element grid md:grid-cols-2 items-center sm:py-20'>
         <article>
           <p className='pt-40 sm:pt-10 text-2x1 font-bold text-[#0C1830] capitalize tracking-wide'>
-            GOOD DAY!
+            WELCOME TO THE ART WORLD!
           </p>
-          <p className='text-7xl font-bold text-white tracking-wider pointer-events-none shadow-none shadow'>I'm Latrell</p>
+          <p className='text-7xl font-bold text-white tracking-wider pointer-events-none shadow-none shadow'>We are Curator<span className='text-[#0C1830]'>Art</span></p>
           <p className='text-3xl font-bold text-[#0C1830] capitalize tracking-wide'>
-            Web Developer
+            Art Curator & Enthusiast
           </p>
           <p className='text-[1em] text-lg text-white capitalize tracking-wide pointer-events-none shadow-none shadow'>
-            I am a passionate and innovative web developer with a knack for creating captivating and functional websites. With a blend of creativity and technical expertise, I bring digital ideas to life and deliver seamless online experiences.
+          As an art curator with a deep passion for creativity, I seek to preserve and showcase the beauty of art. I specialize in organizing exhibitions, promoting artists, and fostering a deeper understanding of art in all its forms, from traditional to contemporary.
           </p>
-          <div className='flex gap-x-8 w-full pt-5 md:pb-10'>
+          <div className='flex gap-x-8 w-full pt-5 md:pb-10 items-center'>
             <div
               onClick={openModal}
-              className='p-4 text-white font-bold bg-[#0C1830] hover:cursor-pointer hover:text-[#2A4D93] hover:bg-white duration-300 w-1/3 text-center boxshadow borders hover:scale-105 transform'
+              className='p-4 text-white font-bold bg-[#0C1830] hover:cursor-pointer hover:text-[#2A4D93] hover:bg-white duration-300 w-1/3 text-center boxshadow rounded-xl hover:scale-105 transform'
             >
-              Contact Me
+              Contact Us
             </div>
 
             <div
               onClick={() => window.open(resume, '_blank')}
-              className='p-4 text-white font-bold bg-[#0C1830] hover:cursor-pointer hover:text-[#2A4D93] hover:bg-white duration-300 w-1/3 text-center boxshadow borders hover:scale-105 transform'
+              className='p-3 text-[#0C1830] font-bold bg-transparent hover:cursor-pointer border border-[#0C1830] hover:text-[#2A4D93] hover:bg-white duration-300 w-[30%] text-center rounded-xl hover:scale-105 transform'
             >
-              Resume
+              Gallery
             </div>
 
 
