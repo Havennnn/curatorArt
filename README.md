@@ -1,12 +1,13 @@
-<<<<<<< HEAD
-# my-portfolio
-=======
-# React + Vite
+# MERN Auth - Authentication System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive art curation platform designed using React, Node.js, and Tailwind CSS. This website allows users to explore through a clean and modern interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 801a577 (Initial commit)
+- Responsive Design: Clean and simple user interface using Tailwind CSS.
+- Art Gallery: View a curated selection of portrait art with detailed descriptions and artist information.
+
+## Technologies Used
+
+- **Vite**: For fast and efficient development.
+- **Tailwind CSS**: For fast, utility-first CSS styling.
