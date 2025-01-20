@@ -1,4 +1,4 @@
-# MERN Auth - Authentication System
+# CuratorArt - Gallery Museum Website
 
 A sleek and responsive art curation platform designed using React, Node.js, and Tailwind CSS. This website allows users to explore through a clean and modern interface.
 
