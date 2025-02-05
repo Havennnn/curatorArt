@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Modal Component
 const ContactModal = ({ isOpen, onClose }) => {
@@ -7,7 +7,10 @@ const ContactModal = ({ isOpen, onClose }) => {
   return (
     <>
       {/* Background Overlay */}
-      <div className="fixed inset-0 bg-black opacity-50 z-20" onClick={onClose}></div>
+      <div
+        className="fixed inset-0 bg-black opacity-50 z-20"
+        onClick={onClose}
+      ></div>
 
       {/* Modal Content */}
       <div className="fixed inset-0 flex justify-center items-center z-30">
@@ -15,7 +18,9 @@ const ContactModal = ({ isOpen, onClose }) => {
           <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
           <form>
             <div className="mb-4">
-              <label className="block mb-2" htmlFor="name">Name</label>
+              <label className="block mb-2" htmlFor="name">
+                Name
+              </label>
               <input
                 type="text"
                 id="name"
@@ -24,7 +29,9 @@ const ContactModal = ({ isOpen, onClose }) => {
               />
             </div>
             <div className="mb-4">
-              <label className="block mb-2" htmlFor="email">Email</label>
+              <label className="block mb-2" htmlFor="email">
+                Email
+              </label>
               <input
                 type="email"
                 id="email"
@@ -33,7 +40,9 @@ const ContactModal = ({ isOpen, onClose }) => {
               />
             </div>
             <div className="mb-4">
-              <label className="block mb-2" htmlFor="message">Message</label>
+              <label className="block mb-2" htmlFor="message">
+                Message
+              </label>
               <textarea
                 id="message"
                 placeholder="Your Message"
@@ -49,7 +58,10 @@ const ContactModal = ({ isOpen, onClose }) => {
               >
                 Close
               </button>
-              <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
+              <button
+                type="submit"
+                className="bg-blue-600 text-white px-4 py-2 rounded"
+              >
                 Send Message
               </button>
             </div>

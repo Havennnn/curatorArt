@@ -3,8 +3,8 @@ import hero from "../assets/hero-bg.png";
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-base text-white overflow-hidden relative">
-      <div className="px-10 flex flex-col gap-5 h-full justify-center mt-10">
+    <div className="h-[680px] bg-gradient-to-r from-[#0D0D0D] to-[#181818] text-white overflow-hidden relative">
+      <div className="px-10 flex flex-col gap-5 h-full justify-center mt-10 realtive">
         <h1 className="text-4xl">
           Welcome to <span className="text-6xl font-bold">Art Curator</span>
         </h1>

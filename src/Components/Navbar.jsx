@@ -17,12 +17,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="absolute flex items-center bg-[#0a0a0a] flex-col h-34 w-auto px-1 top-2">
-            <img src={Logo} className="h-16 w-16" />
-            <h1 className="text-center pb-2 uppercase text-[10px] -mt-2">
-              Art <br />
-              Curator
-            </h1>
+          <div className="absolute -mt-3">
+            <img src={Logo} className="h-12 w-12" />
           </div>
 
           <div className="flex gap-10">
