@@ -1,98 +1,43 @@
-import { useState, useEffect } from 'react';
-import { links } from '../data';
+import Logo from "../assets/logo.svg";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Check if the user scrolled more than 50px
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <nav
-      className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled || isMenuOpen ? 'bg-[#1F3A71]' : 'bg-transparent'
-      }`}
-    >
-      <div className="align-element flex flex-col sm:flex-row sm:items-center py-5 justify-between">
-        <h2 className="text-3xl font-medium text-white pointer-events-none">
-          curator<span className="text-[#0C1830] font-bold text-[1.4em] shadowlight removeshadow">Art</span>
-        </h2>
+    <nav className="fixed z-50 w-full text-white text-sm backdrop-blur-sm">
+      <div className="align-element py-2 relative ">
+        <div className="flex justify-center items-center gap-52 pt-6">
+          <div className="flex gap-10">
+            <a href="#" className="text-white">
+              Home
+            </a>
+            <a href="#" className="text-white">
+              Events
+            </a>
+            <a href="#" className="text-white">
+              Gallery
+            </a>
+          </div>
 
-        {/* Buttons on the right */}
-        <div className="font-medium gap-x-14 buttons hidden sm:flex">
-          {links.map((link) => {
-            const { id, href, text } = link;
-            return (
-              <a
-                key={id}
-                href={href}
-                className="capitalize text-white text-lg tracking-wide hover:text-black duration-300"
-              >
-                {text}
-              </a>
-            );
-          })}
-        </div>
+          <div className="absolute flex items-center bg-[#0a0a0a] flex-col h-34 w-auto px-1 top-2">
+            <img src={Logo} className="h-16 w-16" />
+            <h1 className="text-center pb-2 uppercase text-[10px] -mt-2">
+              Art <br />
+              Curator
+            </h1>
+          </div>
 
-        {/* Mobile Menu Button */}
-        <div className="absolute z-10 right-10 sm:hidden">
-          <button onClick={toggleMenu} className="text-white p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-9 h-9"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {isMenuOpen && (
-        <div className="sm:hidden bg-[#1F3A71] py-10">
-          <div className="flex flex-col items-center space-y-10">
-            {links.map((link) => {
-              const { id, href, text } = link;
-              return (
-                <a
-                  key={id}
-                  href={href}
-                  className="capitalize text-white text-lg tracking-wide hover:text-black duration-300"
-                >
-                  {text}
-                </a>
-              );
-            })}
+          <div className="flex gap-10">
+            <a href="#" className="text-white">
+              Updates
+            </a>
+            <a href="#" className="text-white">
+              History
+            </a>
+            <a href="#" className="text-white">
+              Contact
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
