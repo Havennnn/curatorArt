@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="h-full absolute top-0 left-0 w-full flex justify-center items-center">
         <div>
           <img
-            src="/hero-bg.png"
+            src={hero}
             alt="hero-bg"
             className="absolute -bottom-32 right-0 w-[900px] z-10"
           />
