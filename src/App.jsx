@@ -4,6 +4,7 @@ import Divider from "./components/Divider";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import History from "./components/History";
+import Events from "./components/Events";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Divider />
       <History />
+      <Events />
       <About />
       <Projects />
       <Footer />
