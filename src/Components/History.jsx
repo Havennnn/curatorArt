@@ -1,4 +1,3 @@
-import statue from "../assets/statue.png";
 const History = () => {
   return (
     <section className="bg-base w-full py-10 px-32 relative">
@@ -22,7 +21,7 @@ const History = () => {
         </div>
         <div className="p-10 flex flex-col w-3/5 gap-10 z-10">
           <div className="flex justify-center items-center mt-28">
-            <img src={statue} alt="statue" className="w-[450px]" />
+            <img src="/Statue.png" alt="statue" className="w-[450px]" />
           </div>
 
           <p className="text-md font-poppins bottom-0">
