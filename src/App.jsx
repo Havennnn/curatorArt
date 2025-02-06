@@ -1,4 +1,4 @@
-import About from "./components/About.jsx";
+/* import About from "./components/About.jsx"; */
 import Hero from "./components/Hero.jsx";
 import Divider from "./components/Divider.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -15,7 +15,7 @@ const App = () => {
       <Divider />
       <History />
       <Events />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Footer />
     </>
