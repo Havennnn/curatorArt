@@ -1,3 +1,4 @@
+import "./design.css";
 import hero from "../assets/hero-bg.png";
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
       <div className="h-full absolute top-0 left-0 w-full flex justify-center items-center">
         <div>
           <img
-            src={hero}
+            src="/hero-bg.png"
             alt="hero-bg"
             className="absolute -bottom-32 right-0 w-[900px] z-10"
           />
