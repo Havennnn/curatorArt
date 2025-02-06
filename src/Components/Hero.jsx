@@ -1,4 +1,3 @@
-import "./design.css";
 import hero from "../assets/hero-bg.png";
 
 const Hero = () => {
