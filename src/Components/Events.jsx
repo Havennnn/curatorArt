@@ -1,4 +1,5 @@
 import React from "react";
+import image1 from "../assets/image01.png";
 
 const Events = () => {
   return (
@@ -14,7 +15,7 @@ const Events = () => {
         <div class="carousel-container mt-10">
           <div class="carousel">
             <div class="carousel-item relative">
-              <img src="/image01.png" alt="Image 1" />
+              <img src={image1} alt="Image 1" />
               <div class="absolute bottom-0 flex justify-center items-center gap-5 px-5 py-5 w-full">
                 <div className="flex justify-center items-center w-1/6">
                   <h1 className="text-5xl tracking-tight">01</h1>
