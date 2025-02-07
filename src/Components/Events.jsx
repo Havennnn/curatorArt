@@ -4,7 +4,7 @@ import image1 from "../assets/image01.png";
 const Events = () => {
   return (
     <section className="bg-base w-full py-10 2xl:py-16 px-24 relative ">
-      <div className="flex flex-col justify-center items-center text-white w-full">
+      <div className="flex flex-col justify-center items-center text-white px-24 w-full">
         <div className="flex justify-between items-center w-full">
           <div className="text-4xl 2xl:text-6xl border-t border-b py-2">
             Upcoming Events
@@ -44,12 +44,10 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center w-full mt-5">
+        <div className="flex justify-between items-center w-full mt-5 px-10">
           <div>
             <div className="w-64 bg-secondary rounded-full">
-              <div className="w-1/6 h-full bg-white rounded-full text-[10px]">
-                h
-              </div>
+              <div className="w-1/6 h-full p-2 bg-white rounded-full text-[10px]"></div>
             </div>
           </div>
           <div className="flex gap-2 2xl:gap-4">

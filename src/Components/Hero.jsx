@@ -3,7 +3,7 @@ import hero from "../assets/hero-bg.png";
 const Hero = () => {
   return (
     <div className="h-screen bg-gradient-to-r from-[#0D0D0D] to-[#181818] text-white overflow-hidden relative">
-      <div className="px-16 flex flex-col gap-5 h-full justify-center mt-10 relative z-20">
+      <div className="px-24 flex flex-col gap-5 h-full justify-center mt-10 relative z-20">
         <h1 className="text-6xl">
           Welcome to <span className="text-8xl font-bold">Art Curator</span>
         </h1>
@@ -22,10 +22,10 @@ const Hero = () => {
           <img
             src={hero}
             alt="hero-bg"
-            className="absolute -bottom-48 right-0 w-[1300px] z-10"
+            className="absolute -bottom-48 -right-16 w-[1300px] z-10"
           />
         </div>
-        <div class="absolute lg:w-[1200px] lg:h-[1200px] rounded-full border-[16px] border-white/90 shadow-[0_0_20px_5px_rgba(255,255,255,0.8)] -right-28 -bottom-64 z-0"></div>
+        <div class="absolute lg:w-[1200px] lg:h-[1200px] rounded-full border-[16px] border-white/90 shadow-[0_0_20px_5px_rgba(255,255,255,0.8)] -right-36 -bottom-64 z-0"></div>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import History from "./Components/History.jsx";
 import Events from "./Components/Events.jsx";
 import Gallery from "./Components/Gallery.jsx";
 import GallerySlider from "./Components/GallerySlider.jsx";
+import Product from "./Components/Product.jsx";
 import Footer from "./Components/Footer.jsx";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Events />
       <Gallery />
       <GallerySlider />
+      <Product />
       <Footer />
     </>
   );

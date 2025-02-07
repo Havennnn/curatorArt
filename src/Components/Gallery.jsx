@@ -2,9 +2,9 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section className="bg-[#0D0D0D] px-24">
+    <section className="bg-[#0D0D0D] px-60 pt-10">
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-3 gap-4 max-w-7xl">
+        <div className="grid grid-cols-3 gap-4 max-w-full">
           {/* First Column */}
           <div className="grid grid-rows-3 gap-4">
             <img
