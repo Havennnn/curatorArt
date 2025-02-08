@@ -77,7 +77,10 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center mt-20 text-white 2xl:text-2xl font-sans flex-col gap-5">
         <img src="/LM.svg" alt="LatsMarbls" className="h-12 w-12"></img>
-        <h1 className="font-extralight">@LatsMarbls, Art curator project</h1>
+        <h1 className="font-extralight">
+          © LatsMarbls, <span className="text-[#979797]">Art curator</span>{" "}
+          project | All rights reserved
+        </h1>
       </div>
     </div>
   );
